@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo5</title>
+</head>
+<body>
+    <p>Html</p>
+    <p class="maclasse">Javascript</p>
+    <div id="unediv">Css</div>
+    <button>Cliquez !</button>
+    <script src="js/jquery.js"></script>
+
+    <script>
+       
+            $(function(){    
+               
+            $('#unediv').css({ 
+                              width:'100px',
+                              height:'100px',
+                              backgroundColor:'yellow'
+                        });
+
+            $('button').on('click',function(){
+                $('#unediv').css({backgroundColor:'grey', color:'blue'});
+                            
+            });
+            })
+    </script>
+</body>
+</html>
